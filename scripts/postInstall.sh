@@ -34,4 +34,15 @@ cat << EOT >> ./data/config.json
 
 EOT
 
+
 docker-compose up -d;
+
+sleep 30s;
+
+cat << EOT >> ./scripts/update_users.sql
+UPDATE users SET password_change_required = 0 WHERE username = 'admin';
+EOT
+
+sqlite3 ./data/gophish.db < update_users.sql
+
+rm -rf ./data/gophish.db
