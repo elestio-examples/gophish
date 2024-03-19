@@ -43,6 +43,6 @@ cat << EOT >> ./scripts/update_users.sql
 UPDATE users SET password_change_required = 0 WHERE username = 'admin';
 EOT
 
-sqlite3 ./data/gophish.db < update_users.sql
+sqlite3 ./data/gophish.db < ./scripts/update_users.sql
 
-rm -rf ./data/gophish.db
+rm -rf ./scripts/update_users.sql
