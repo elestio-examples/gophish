@@ -2,7 +2,6 @@ version: "3"
 services:
   gophish:
     image: gophish/gophish:${SOFTWARE_VERSION_TAG}
-    container_name: gophish
     restart: always
     environment:
       GOPHISH_INITIAL_ADMIN_PASSWORD: ${ADMIN_PASSWORD}
