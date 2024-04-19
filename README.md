@@ -16,6 +16,22 @@ You can open Gophish UI here:
     Login: admin
     password: [ADMIN_PASSWORD]
 
+# Custom domain instructions (IMPORTANT)
+
+By default, we set up a CNAME on elestio.app domain, but you will probably want to have your domain.
+
+***Step 1:*** Add your domain in the Elestio dashboard as explained here:
+
+    https://docs.elest.io/books/security/page/custom-domain-and-automated-encryption-ssltls
+
+***Step 2:*** Modify the environment variables and config.json file to set up your custom domain. Navigate to the Elestio dashboard, then proceed to Service Overview > Tools > Launch VS Code. Within the `.env` file, adjust the `DOMAIN` key to reflect your domain. Next, locate the `config.json` file in the data directory and include your domain in the `trusted_origins` array.
+
+***Step 3:*** Open the VS code terminal and run the below command:
+      
+      docker-compose down;
+      docker-compose up -d;
+      
+
 # Sending Profile
 
 The Sending Profile feature enables you to configure SMTP settings for sending email campaigns. Here is a step-by-step guide on how to set up your SMTP configuration within the application.
