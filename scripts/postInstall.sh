@@ -17,10 +17,11 @@ cat << EOT >> ./data/config.json
                 "trusted_origins": ["${DOMAIN}"]
         },
         "phish_server": {
-                "listen_url": "0.0.0.0:80",
+                "listen_url": "0.0.0.0:8080",
                 "use_tls": false,
-                "cert_path": "example.crt",
-                "key_path": "example.key"
+                "cert_path": "gophish_admin.crt",
+                "key_path": "gophish_admin.key",
+                "trusted_origins": ["${DOMAIN}"]
         },
         "db_name": "sqlite3",
         "db_path": "gophish.db",
