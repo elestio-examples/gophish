@@ -16,7 +16,7 @@ You can open Gophish UI here:
     Login: admin
     password: [ADMIN_PASSWORD]
 
-You can access Phishing server at http://[CI_CD_DOMAIN]:8080/
+You can access Phishing server at https://[CI_CD_DOMAIN]:8080/
 
 # Custom domain instructions (IMPORTANT)
 
