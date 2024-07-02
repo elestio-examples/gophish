@@ -7,7 +7,7 @@ services:
       GOPHISH_INITIAL_ADMIN_PASSWORD: ${ADMIN_PASSWORD}
     ports:
       - 8443:8443
-      - 51767:8080
+      - 172.17.0.1:51767:8080
       - 172.17.0.1:51766:3333
     volumes:
       - data:/opt/gophish
