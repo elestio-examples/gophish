@@ -44,13 +44,6 @@ The Sending Profile feature enables you to configure SMTP settings for sending e
 
 3.  **Configure SMTP Settings:** You have the option to use either your own SMTP credentials or the provided credentials for sending emails. Below are the details for both options:
 
-    - **Using Provided Credentials:**
-
-          SMTP From: [DOMAIN]@vm.elestio.app
-          Host: 172.17.0.1:25
-          Username: <blank>
-          Password: <blank>
-
-    - **Using Your Own SMTP Credentials:** If you choose to use your own SMTP credentials, input the appropriate information in the fields provided.
+    - **Using Your Own SMTP Credentials:** Input the appropriate information in the fields provided.
 
 4.  **Save Changes:** After configuring your SMTP settings, ensure to save the changes before exiting the configuration popup.
