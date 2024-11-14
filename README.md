@@ -42,8 +42,6 @@ The Sending Profile feature enables you to configure SMTP settings for sending e
 
 2.  **Open Configuration Popup:** Upon entering the Sending Profiles section, a new popup window will appear, allowing you to configure your SMTP settings.
 
-3.  **Configure SMTP Settings:** You have the option to use either your own SMTP credentials or the provided credentials for sending emails. Below are the details for both options:
-
-    - **Using Your Own SMTP Credentials:** Input the appropriate information in the fields provided.
+3.  **Configure SMTP Settings:** Please enter your own SMTP credentials in the fields provided.
 
 4.  **Save Changes:** After configuring your SMTP settings, ensure to save the changes before exiting the configuration popup.
